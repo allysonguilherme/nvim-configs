@@ -1,4 +1,6 @@
 require("config.lazy")
+require("mason").setup()
+
 
 vim.opt.clipboard = "unnamedplus"
 

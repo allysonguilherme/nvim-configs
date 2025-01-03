@@ -1,0 +1,10 @@
+{
+    "languageserver": {
+        "omnisharp": {
+            "command": "/home/allyson/omnisharp/omnisharp-linux-x64-net6.0/OmniSharp",
+            "args": ["--languageserver", "--hostPID", "${pid}"],
+            "filetypes": ["cs", "vb"],
+            "rootPatterns": [".git", "*.sln"]
+        }
+    }
+}

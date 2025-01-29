@@ -1,21 +1,42 @@
 {
-  "languageserver": {
-    "omnisharp": {
-      "command": "/home/allyson/omnisharp/omnisharp-linux-x64-net6.0/OmniSharp",
-      "args": ["--languageserver", "--hostPID", "${pid}"],
-      "filetypes": ["cs", "vb"],
-      "rootPatterns": [".git", "*.sln"]
-    },
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
+    "languageserver": {
+        "omnisharp": {
+            "command": "~/omnisharp/OmniSharp",
+            "args": [
+                "--languageserver",
+                "--hostPID",
+                "${pid}"
+            ],
+            "filetypes": [
+                "cs",
+                "vb"
+            ],
+            "rootPatterns": [
+                ".git",
+                "*.sln"
+            ]
+        },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cc",
+                "cpp",
+                "c++",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
         }
-      }
     }
-  },
-  "angular.enable-strict-mode-prompt": false
 }
